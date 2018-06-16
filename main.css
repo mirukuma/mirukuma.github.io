@@ -52,7 +52,7 @@
     animation-duration: 3s;
     animation-name: slideIn;
     animation-fill-mode: forwards;
-    line-height: 0.8em
+    line-height: 0.3em
 }
 .welcome {
     color: #e0e0e0;
