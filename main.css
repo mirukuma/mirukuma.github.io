@@ -1,4 +1,21 @@
 h1 {
     font-size: 1500%;
-    font-family: cursive; 
+    font-family: cursive;
+    animation-duration: 3s;
+    animation-name: show;
+}
+@keyframes show {
+	0% {
+		transform:translate(0,-2em);
+		opacity:0;
+		text-shadow:0 0 0 #000;
+	}
+	50% {
+		text-shadow:0 0 0.1em #000;
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+		text-shadow:none;
+	}
 }
