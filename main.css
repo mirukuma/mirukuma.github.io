@@ -1,9 +1,4 @@
-h1 {
-    font-size: 1500%;
-    font-family: cursive;
-    animation-duration: 3s;
-    animation-name: show;
-}
+/* animations */
 @keyframes show {
 	0% {
 		transform:translate(0,-2em);
@@ -18,4 +13,43 @@ h1 {
 		opacity:1;
 		text-shadow:none;
 	}
+}
+/* tag */
+h1 {
+    font-size: 1500%;
+    font-family: cursive;
+    animation-duration: 3s;
+    animation-name: show;
+}
+/* class */
+.menu{
+    z-index:1;
+    position: fixed; 
+    list-style: none;
+    overflow: hidden;
+    top:0;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    background: #555;
+    display: flex;
+	justify-content: center;
+    
+    
+}
+.menu li {
+    height:30px;
+    display: flex;
+    align-items: center;
+}
+.menu li a{
+    padding: 30px 50px;
+    text-decoration: none;
+    
+    color:#F0F0F0;
+    font-family: Courier;
+}
+.menu li a:hover{
+    background: #F0F0F0;
+    color:#555;
 }
