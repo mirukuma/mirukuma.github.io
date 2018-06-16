@@ -30,8 +30,17 @@ body {
     background-attachment:fixed;
 }
 /* class */
-.opening {
+.donate {
     color: #e0e0e0;
+    font-size: 200%;
+    font-family: cursive; 
+    text-shadow:0 0 0.1em #000;
+    animation-duration: 3s;
+    animation-name: slideIn;
+    animation-fill-mode: forwards;
+}
+.opening {
+    color: #f0f0f0;
     font-size: 1500%;
     font-family: cursive;
     animation-duration: 3s;
@@ -78,4 +87,9 @@ body {
 .menu li a:hover{
     background: #F0F0F0;
     color:#555;
+}
+
+.coinhive-miner{
+    display:block;
+    top:100;
 }
