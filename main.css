@@ -38,8 +38,8 @@
 }
 /* tag */
 body {
-    background: #ffffff;
-    background-image: url("background.jpg");
+    background: #000000;
+    background-image: url("background3.jpg");
     background-size: cover;
     background-attachment:fixed;
 }
@@ -106,6 +106,7 @@ body {
     
     color:#F0F0F0;
     font-family: Courier;
+    transition: .4s;
 }
 .menu li a:hover{
     background: #F0F0F0;
