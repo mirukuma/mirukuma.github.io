@@ -22,6 +22,20 @@
 		opacity:1;
 	}
 }
+@keyframes main {
+	0% {
+        transform:translate(0,0.25em);
+		opacity:0;
+        text-shadow:0 0 0 #000;
+	}
+
+    100% {
+        text-shadow:0 0 0.1em #000;
+        transform:translate(0,0);
+        opacity:1;
+	}
+    
+}
 /* tag */
 body {
     background: #ffffff;
@@ -34,7 +48,6 @@ body {
     color: #e0e0e0;
     font-size: 200%;
     font-family: cursive; 
-    text-shadow:0 0 0.1em #000;
     animation-duration: 3s;
     animation-name: slideIn;
     animation-fill-mode: forwards;
@@ -56,6 +69,16 @@ body {
     animation-name: slideIn;
     animation-fill-mode: forwards;
     line-height: 0.5em
+}
+.main {
+    font-size: 200%;
+    opacity:0;
+    color: #f0f0f0;
+    font-family: serif;
+    animation-duration: 1s;
+    animation-name: main;
+    animation-fill-mode: forwards;
+    animation-delay:3s;
 }
 .menu{
     z-index:1;
