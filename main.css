@@ -36,13 +36,6 @@
 	}
     
 }
-/* tag */
-body {
-    background: #000000;
-    background-image: url("background3.jpg");
-    background-size: cover;
-    background-attachment:fixed;
-}
 /* class */
 .donate {
     color: #e0e0e0;
@@ -116,4 +109,11 @@ body {
 .coinhive-miner{
     display:block;
     top:100;
+}
+/* tag */
+body {
+    background: #000000;
+    background-image: url("background3.jpg");
+    background-size: cover;
+    background-attachment:fixed;
 }
