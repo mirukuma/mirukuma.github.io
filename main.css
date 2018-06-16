@@ -1,27 +1,53 @@
 /* animations */
-@keyframes show {
-	0% {
+@keyframes slideIn {
+	from {
 		transform:translate(0,-2em);
 		opacity:0;
 		text-shadow:0 0 0 #000;
 	}
 	50% {
-		text-shadow:0 0 0.1em #000;
+		
 	}
-	100% {
+	to {
 		transform:translate(0,0);
 		opacity:1;
-		text-shadow:none;
+		text-shadow:0 0 0.1em #000;
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
 	}
 }
 /* tag */
-h1 {
+body {
+    background: #ffffff;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+}
+/* class */
+.opening {
+    color: #e0e0e0;
     font-size: 1500%;
     font-family: cursive;
     animation-duration: 3s;
-    animation-name: show;
+    animation-name: slideIn;
+    animation-fill-mode: forwards;
+    line-height: 0.8em
 }
-/* class */
+.welcome {
+    color: #e0e0e0;
+    font-size: 500%;
+    font-family: cursive;
+    animation-duration: 3s;
+    animation-name: slideIn;
+    animation-fill-mode: forwards;
+    line-height: 0.5em
+}
 .menu{
     z-index:1;
     position: fixed; 
