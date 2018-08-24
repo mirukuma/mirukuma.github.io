@@ -6,7 +6,7 @@
 		text-shadow:0 0 0 #000;
 	}
 	50% {
-		
+
 	}
 	to {
 		transform:translate(0,0);
@@ -34,7 +34,7 @@
         transform:translate(0,0);
         opacity:1;
 	}
-    
+
 }
 /* class */
 .opening {
@@ -44,7 +44,9 @@
     animation-duration: 3s;
     animation-name: slideIn;
     animation-fill-mode: forwards;
-    line-height: 0.3em
+    line-height: 0.3em;
+		margin-bottom: 1em;
+		font-weight :100
 }
 .welcome {
     color: #e0e0e0;
@@ -67,7 +69,7 @@
 }
 .menu{
     z-index:1;
-    position: fixed; 
+    position: fixed;
     list-style: none;
     overflow: hidden;
     top:0;
@@ -77,8 +79,8 @@
     background: #555;
     display: flex;
 	justify-content: center;
-    
-    
+
+
 }
 .menu li {
     height:2vw;
@@ -88,7 +90,7 @@
 .menu li a{
     padding: 2vw 4vw;
     text-decoration: none;
-    
+
     color:#F0F0F0;
     font-family: Courier;
     font-size:1.2vw;
