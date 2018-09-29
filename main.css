@@ -11,6 +11,7 @@
 	to {
 		transform:translate(0,0);
 		opacity:1;
+		text-shadow:0 0 0.1em #000;
 	}
 }
 @keyframes fadeIn {
@@ -29,58 +30,42 @@
 	}
 
     100% {
-        /*text-shadow:0 0 0.1em #000;*/
+        text-shadow:0 0 0.1em #000;
         transform:translate(0,0);
         opacity:1;
 	}
 
 }
 /* class */
-.title {
-    color: #101010;
-    font-size: 10vw;
-    font-family:'Hiragino Sans','游ゴシック Light',sans-serif;
-    animation-duration: 4s;
+.opening {
+    color: #f0f0f0;
+    font-size: 20vw;
+    font-family: cursive;
+    animation-duration: 3s;
     animation-name: slideIn;
     animation-fill-mode: forwards;
     line-height: 0.3em;
 		margin-bottom: 1em;
-		font-weight :100;
-		text-shadow:0.05em 0.05em 0.1em #888;
-}
-.motto {
-    color: #101010;
-    font-size: 15vw;
-    font-family:'Hiragino Sans','游ゴシック Light',sans-serif;
-    animation-duration: 3s;
-    animation-name: slideIn;
-    animation-fill-mode: forwards;
-    line-height: 50vh;
-		margin-bottom: 0.3em;
-		font-weight :100;
-		text-shadow:0.05em 0.05em 0.1em #888;
+		font-weight :100
 }
 .welcome {
-    color: #101010 ;
+    color: #e0e0e0;
     font-size: 6vw;
-    font-family:'Hiragino Sans','游ゴシック Light',sans-serif;
+    font-family: cursive;
     animation-duration: 3s;
     animation-name: slideIn;
     animation-fill-mode: forwards;
-    line-height: 0.5em;
-		font-weight :100;
-		text-shadow:0.05em 0.05em 0.1em #888;
+    line-height: 0.5em
 }
 .main {
     font-size: 2.5vw;
-		font-family:'Hiragino Sans','游ゴシック Light',sans-serif;
     opacity:0;
-    color: #101010;
+    color: #f0f0f0;
+    font-family: serif;
     animation-duration: 1s;
     animation-name: main;
     animation-fill-mode: forwards;
     animation-delay:3s;
-	  font-weight :200;
 }
 .menu{
     z-index:1;
@@ -91,7 +76,7 @@
     left:0;
     right:0;
     margin: 0 auto;
-		background: linear-gradient(rgba(240,240,240,1), rgba(240,240,240,0.0));
+    background: #555;
     display: flex;
 	justify-content: center;
 
@@ -106,27 +91,24 @@
     padding: 2vw 4vw;
     text-decoration: none;
 
-    color:#101010;
+    color:#F0F0F0;
     font-family: Courier;
-    font-size:1.5vw;
+    font-size:1.2vw;
     transition: .4s;
 }
 .menu li a:hover{
-		opacity:0.3;
-    /*background: rgba(120,120,120,0.5);*/
+    background: #F0F0F0;
+    color:#555;
 }
 
 .coinhive-miner{
     display:block;
-}
-.logo {
-    width: 3vw;
-		height: 3vw;
+    top:100;
 }
 /* tag */
 body {
-    background: #F0F0F0;
-    /*background-image: url("background3.jpg");*/
+    background: #000000;
+    background-image: url("background3.jpg");
     background-size: cover;
     background-attachment:fixed;
 }
