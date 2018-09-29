@@ -107,7 +107,7 @@
     text-decoration: none;
 
     color:#101010;
-    font-family: Courier;
+    font-family: monospace;
     font-size:1.5vw;
     transition: .4s;
 }
