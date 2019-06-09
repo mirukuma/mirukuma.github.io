@@ -68,7 +68,7 @@
 	margin-bottom: 0.3em;
 	font-weight :100;
 	opacity:0;
-	animation-delay:1s;
+	animation-delay:0s;
 }
 
 .welcome {
@@ -81,7 +81,7 @@
     line-height: 0.5em;
 	font-weight :100;
 	opacity:0;
-	animation-delay:4s;
+	animation-delay:0s;
 }
 /*
 .main {
@@ -254,11 +254,13 @@ html {
 	top: 0;
 	right: 0;
 	left: 0;
+	/*
 	display: flex;
 	flex-direction: column;
-	justify-content: center; /* 子要素をflexboxにより中央に配置する */
+	justify-content: center; 
 	align-items: center;
 	margin-top: auto;
+	*/
 }
 
 canvas {
