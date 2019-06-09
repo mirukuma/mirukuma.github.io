@@ -72,6 +72,7 @@ function sleep(msec) {
 }
 
 async function init(japan=false){
+  /*
   whichLong = window.innerWidth > window.innerHeight;
   if(whichLong){
     wave_w = 47;
@@ -98,6 +99,7 @@ async function init(japan=false){
   setInterval("tick()",1000/60);
   await sleep(4000);
   COLOR = "#000A00"
+  */
 }
 
 /*
