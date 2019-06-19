@@ -15,62 +15,73 @@
 </head>
 
 <body>
-		<canvas id="canvas"></canvas>
-		<section id="body">
-        <ul class="menu" data-scroll-header>
-            <li>
-                <a href="#">
-                    HOME
-                </a>
-            </li>
-            <li> 
-                <a data-scroll href="#about">
-                    ABOUT
-                </a>
-            </li>
-            <li>
-                <a href="#works">
-                    WORKS
-                </a>
-            </li>
-            <li>
-                <a href="#donate">
-                    DONATE
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    CONTACT
-                </a>
-            </li>
-        </ul>
-        <div class="motto">
-            Kawaii save the world
-        </div>
-				<div class="welcome">
-            Welcome to my website.
-        </div>
-        <h1 id="about" class="title">
-               ABOUT
-            </h1>
-            <div class="main">
-                <p>Hi! I'm MiL!</p>
-                <p>I'm a member of TeamPMG.</p>
-                <p>I'm interested in machine learning, blockchain, AI, and so on.</p>
-                <p>I want to change the world by 'kawaii power'.</p>
-                <p>So I work hard everyday!</p>
+	<canvas id="canvas"></canvas>
+	<section id="body">
 
-        
-                <p class="main">
+    <!-- menu bar-->
+    <ul class="menu" data-scroll-header>
+         <li>
+            <a href="#">
+                HOME
+            </a>
+        </li>
+        <li> 
+            <a data-scroll href="#about">
+                ABOUT
+            </a>
+        </li>
+        <li>
+            <a href="#works">
+                WORKS
+            </a>
+        </li>
+        <li>
+            <a href="#donate">
+                DONATE
+            </a>
+        </li>
+        <li>
+            <a href="#contact">
+                CONTACT
+            </a>
+        </li>
+    </ul>
+
+    <!--main cntents-->
+
+    <!-- top-->
+    <center>
+    <div class="motto">
+        Think different
+    </div>
+			<div class="welcome">
+        Welcome to my website.
+    </div>
+     <!-- about-->
+    <p id="about">
+        <h1 class="title">
+            ABOUT
+        </h1>
+        <div class="main">
+            <p>Hi! I'm MiL!</p>
+            <p>I'm a member of TeamPMG.</p>
+            <p>I'm interested in machine learning, blockchain, AI, and so on.</p>
+            <p>I want to change the world by 'kawaii power'.</p>
+            <p>So I work hard everyday!</p>
+            <p>
                 My accounts:
                 <a href="https://twitter.com/MiL_PMG" target="_blank"><img src="img/icon/twitter.svg" class="logo"></a>
                 <a href="https://github.com/MiL-B" target="_blank"><img src="img/icon/github.svg" class="logo"></a>
                 <a href="https://soundcloud.com/yblb8m4lrrhi" target="_blank"><img src="img/icon/soundcloud.svg" class="logo"></a>
                 <a href="https://mstdn.jp/@mirukuma" target="_blank"><img src="img/icon/mastodon.svg" class="logo"></a>
-                </p>
-            </div>
-            <h1 id="works" class="title">
-        WORKS
+            </p>
+        </div>
+    </p>
+
+     <!-- works-->
+    <p id="works">
+        <h1 class="title">
+            WORKS
         </h1>
         <div class="main">
             <div class="works">
@@ -81,33 +92,48 @@
                 </a>
             </div>
         </div>
-        <h1 id="donate" class="title">
-               DONATE
-            </h1>
-            <div class="main">
+    </p>
+
+     <!-- donate-->
+    <p id="donate">
+        <h1 class="title">
+           DONATE
+        </h1>
+        <div class="main">
+        <p>
+            <p>MONA: MBJ3ySTgg3cdif42PaGPh3FQe8z1VCXnxp</p>
+            <p>BCH: 1PhxfB6Acbx72Ryn8ritVFZsJ6ZRdQHqyK</p></br>
+            <p>I look forward to future of cryptocurrency, especially MONA and BCH.</br>
+            So I collect donations by them.</p>
+        </p>
+        </div>
+    </p>
+
+     <!-- contact-->
+    <p id="contact">
+        <h1 class="title">
+           CONTACT
+        </h1>
+        <div class="main">
+            <p>Twitter account:
+            <a href="https://twitter.com/MiL_PMG" target="_blank"><img src="img/icon/twitter.svg" class="logo"></a></p>
+            <p>Mastodon account:
+            <a href="https://mstdn.jp/@mirukuma" target="_blank"><img src="img/icon/mastodon.svg" class="logo"></a></p>
+            <p>mail address: m.love.kmoy@gmail.com</p>
             <p>
-                <p>MONA: MQ6MHo6h3gMEvDHokxdfPfzcMMV9HBMx15</p>
-                <p>BCH: qrm50ng5enx0rhwmzwmk3u9ksuesgt603gvg0xc8jr</p>
-                <p>ZNY: ZdEecvgtJWssbPAC7Ldj7fg9ws2vMYqmdR</p>
+            I recommend Twitter because I'm addicted to Twitter.
             </p>
-            </div>
-            <h1 id="contact" class="title">
-               CONTACT
-            </h1>
-            <div class="main">
-                <p>Twitter account:
-                <a href="https://twitter.com/MiL_PMG" target="_blank"><img src="img/icon/twitter.svg" class="logo"></a></p>
-                <p>Mastodon account:
-                <a href="https://mstdn.jp/@mirukuma" target="_blank"><img src="img/icon/mastodon.svg" class="logo"></a></p>
-                <p>mail address: m.love.kmoy@gmail.com</p>
-                <p>
-                I recommend Twitter because I'm addicted to Twitter.
-                </p>
-            </div>
-			</section>
+        </div>
+    </p>
+    </center>
+
+    </section>
     <script>
     // スムーススクロールを起動する
-    var scroll = new SmoothScroll('a[href*="#"]');
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true
+    });
     </script>
 </body>
 </html>
