@@ -1,0 +1,33 @@
+.menu{
+    z-index:1;
+    position: fixed;
+    list-style: none;
+    overflow: hidden;
+    top:0;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    display: flex;
+  justify-content: center;
+}
+
+.menu li {
+    height:2vw;
+    display: flex;
+    align-items: center;
+}
+
+.menu li a{
+    padding: 2vw 4vw;
+    text-decoration: none;
+
+    color:#222222;
+    font-family: 'Hiragino Sans','游ゴシック Light',sans-serif;
+    font-weight : 200;
+    font-size:1.5vw;
+    transition: .4s;
+}
+
+.menu li a:hover{
+  opacity:0.3;
+}
