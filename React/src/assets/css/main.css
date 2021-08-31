@@ -31,3 +31,16 @@
 .menu li a:hover{
   opacity:0.3;
 }
+
+body {
+  background: linear-gradient(#9BE, #9BE);
+}
+
+.ground {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 10vh;
+  background: #433;
+}
