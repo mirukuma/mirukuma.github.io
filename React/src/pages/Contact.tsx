@@ -7,7 +7,9 @@ import StyledSpan from '../components/Span'
 const Contact = () => (
   <>
     <Menu contents={['home', 'about', 'works', 'donate', 'contact']} />
-    <StyledSpan contents={'contact'} />
+    <center> 
+      <h1  class = 'title'> Contact </h1>
+    </center>
   </>
 );
 

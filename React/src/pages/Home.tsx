@@ -9,7 +9,9 @@ const Home = () => {
   return (
   <>
     <Menu contents={['home', 'about', 'works', 'donate', 'contact']} />
-    <StyledSpan contents={'home'} />
+    <center> 
+      <h1  class = 'title'> Home </h1>
+    </center>
   </>
   );
 };
