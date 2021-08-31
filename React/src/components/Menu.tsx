@@ -3,6 +3,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Link } from 'react-router-dom'
 
 interface Props {
   contents: string[],
@@ -12,9 +13,9 @@ const Menu = (props: Props) => {
   const menuNames = props.contents;
   const menuItems = menuNames.map((name) => 
     <li key={name}>
-        <a href= {name}>
+        <Link to= {name}>
             {name.toUpperCase()}
-        </a>
+        </Link>
     </li>
   );
   return (
