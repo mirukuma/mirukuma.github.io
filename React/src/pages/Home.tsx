@@ -8,6 +8,9 @@ const Home = () => {
   return (
   <>
     <PageTemplate contents='Home' />
+    <div class='main'> 
+      Welcome to my website.
+    </div>
   </>
   );
 };

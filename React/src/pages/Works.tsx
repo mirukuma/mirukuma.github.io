@@ -6,6 +6,9 @@ import PageTemplate from '../components/PageTemplate'
 const Works = () => (
   <>
     <PageTemplate contents='Works' />
+    <div class='main'> 
+      Coming soon......
+    </div>
   </>
 );
 

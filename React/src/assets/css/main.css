@@ -32,9 +32,12 @@
   opacity:0.3;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
   background: linear-gradient(#EEE, #9BE);
-  height: 100vh;
 }
 
 .ground {
@@ -80,4 +83,17 @@ body {
   line-height: 0.3em;
   margin-bottom: 1em;
   font-weight :100;
+}
+
+.main {
+  width: 70%;
+  font-size: 2.5vw;
+  font-family:'Hiragino Sans','游ゴシック Light',sans-serif;
+  opacity:0;
+  color: #433;
+  animation-duration: 1s;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+  font-weight :200;
+  margin-bottom: 1em;
 }
