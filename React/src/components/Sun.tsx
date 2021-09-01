@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const Ground = () => {
+const Sun = () => {
   return (
-    <div class="ground"></div>
+    <div class="sun"></div>
   );
 }
 
-export default Ground
+export default Sun

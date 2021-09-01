@@ -7,7 +7,6 @@ import About from './pages/About'
 import Works from './pages/Works'
 import Donate from './pages/Donate'
 import Contact from './pages/Contact'
-import Ground from './components/Ground'
 
 ReactDOM.render(
   <Router>
@@ -17,7 +16,6 @@ ReactDOM.render(
     <Route path="/works" component={Works}></Route>
     <Route path="/donate" component={Donate}></Route>
     <Route path="/contact" component={Contact}></Route>
-    <Ground />
   </Router>,
 document.getElementById('app'));
 
