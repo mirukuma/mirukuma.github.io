@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom'
 
 import PageTemplate from '../components/PageTemplate'
 
+import MainText from '../components/MainText'
+
 const Works = () => (
   <>
     <PageTemplate contents='Works' />
-    <div class='main'> 
-      Coming soon......
-    </div>
+    <MainText contents='Coming soon......'/> 
   </>
 );
 

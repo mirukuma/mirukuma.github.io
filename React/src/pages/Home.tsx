@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom'
 
 import '../assets/css/main.css'
 import PageTemplate from '../components/PageTemplate'
+import MainText from '../components/MainText'
+
+import {motion} from 'framer-motion'
 
 const Home = () => {
   return (
   <>
     <PageTemplate contents='Home' />
-    <div class='main'> 
-      Welcome to my website.
-    </div>
+    <MainText contents='Welcome to my website' />
   </>
   );
 };
