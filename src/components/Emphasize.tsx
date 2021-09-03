@@ -7,7 +7,7 @@ interface EmphasizeProps {
 
 const Emphasize = (props: EmphasizeProps) => (
   <span style={{
-    color: "#22A",
+    fontWeight: "400",
   }}>
     {props.contents}
   </span>
