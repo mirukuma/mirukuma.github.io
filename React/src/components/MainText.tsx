@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom'
 
 import {motion} from 'framer-motion'
 
+import nowTextColor from '../assets/js/textColor'
+
 interface MainTextProps {
   contents: JSX.Element,
 }
 
 const MainTextProps = (props: MainTextProps) => (
-  <div class='main'> 
+  <div class='main' style={{color: `${nowTextColor()}`}}> 
   <motion.div
     exit={{ opacity:0 }}
     transition={{ duration: 0.4}}
