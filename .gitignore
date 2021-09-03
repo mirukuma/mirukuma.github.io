@@ -1,0 +1,10 @@
+# Node
+node_modules
+package-lock.json
+# System
+.DS_Store
+*.sw*
+# Other
+build
+!build/*.html
+dump
