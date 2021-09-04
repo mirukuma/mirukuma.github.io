@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Menu from '../components/Menu'
 import Ground from '../components/Ground'
 import Sun from '../components/Sun'
+import Moon from '../components/Moon'
 import Sky from '../components/Sky'
 
 import {motion} from 'framer-motion'
@@ -17,6 +18,7 @@ const PageTemplate = (props:TitleProps) => (
   <>
     <Sky />
     <Sun />
+    <Moon />
     <Menu contents={['home', 'about', 'works', 'donate', 'contact']} />
     <motion.h1
       exit={{ opacity:0 }}

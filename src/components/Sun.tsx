@@ -8,13 +8,12 @@ const Sun = () => {
   const time = new Date();
   const colorIndex = Math.round(time.getHours() / 3) % 8;
   const sunColor = sunColorList[colorIndex];
-  const times = SunCalc.getTimes(time, 35.0302644, 135.7858041);
-  const sunrise = times.sunrise;
-  const sunset = times.sunset;
+  const sunTime = SunCalc.getTimes(time, 35.0302644, 135.7858041);
+  const sunrise = sunTime.sunrise;
+  const sunset = sunTime.sunset;
   const sunPosition = (time.getTime() - sunrise.getTime()) / (sunset.getTime() - sunrise.getTime())
   const x = 50 - 40 * Math.cos(Math.PI * sunPosition);
   const y = 80 - 75 * Math.sin(Math.PI * sunPosition);
-  console.log(y)
   return (
     <div class="sun" style ={
       { 
