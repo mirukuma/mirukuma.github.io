@@ -18,7 +18,7 @@ const PageTemplate = (props:TitleProps) => (
   <>
     <Sky />
     <Sun />
-    <Moon />
+    <Moon date = {new Date()} />
     <Menu contents={['home', 'about', 'works', 'donate', 'contact']} />
     <motion.h1
       exit={{ opacity:0 }}
