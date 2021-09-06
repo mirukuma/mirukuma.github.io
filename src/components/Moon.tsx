@@ -13,15 +13,16 @@ const Moon = (props:DateProps) => {
   const moonColor = time.getTime() - sunTime.sunrise.getTime() > 0 ? "#EEE" : "#EEB";
   const opacity = time.getTime() - sunTime.sunrise.getTime() > 0 ? "0.2" : "1";
   const moonTime = SunCalc.getMoonTimes(time, 35.0302644, 135.7858041);
+  if (moonTime.alwaysDown || moonTime.alwaysUp) return null;
   const moonrise = moonTime.rise;
   const moonset = moonTime.set;
   const moonPosition = (time.getTime() - moonrise.getTime()) / (moonset.getTime() - moonrise.getTime())
   const x = 50 - 40 * Math.cos(Math.PI * moonPosition);
   const y = 80 - 75 * Math.sin(Math.PI * moonPosition);
-  const angle = 0 //SunCalc.getMoonIllumination(time, 35.0302644, 135.7858041).angle;
+  const angle = SunCalc.getMoonIllumination(time, 35.0302644, 135.7858041).angle;
   const phase = SunCalc.getMoonIllumination(time, 35.0302644, 135.7858041).phase;
   const maskFill = 0.5 < (phase + 0.25) % 1 ? "white" : "black";
-  const angleCorrection = 0.5 < phase % 1 ? 0 : 180;
+  const angleCorrection = 0.5 < phase % 1 ? 90 : 270;
   const ellipseWidth = `${3.5 * Math.abs((phase % 0.5) - 0.25) * 4}vh`
   return (
       <svg class="moon" style ={
