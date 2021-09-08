@@ -36,10 +36,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  background: linear-gradient(#EB9, #979);
-}
-
 @keyframes slideIn {
   from {
     transform:translate(0,-2em);
