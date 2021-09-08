@@ -14,11 +14,13 @@ interface TitleProps {
   contents: string,
 }
 
+const date = new Date();
+
 const PageTemplate = (props:TitleProps) => (
   <>
-    <Sky />
-    <Sun />
-    <Moon date = {new Date()} />
+    <Sky  date = {date}/>
+    <Sun  date = {date}/>
+    <Moon date = {date}/>
     <Menu contents={['home', 'about', 'works', 'donate', 'contact']} />
     <motion.h1
       exit={{ opacity:0 }}

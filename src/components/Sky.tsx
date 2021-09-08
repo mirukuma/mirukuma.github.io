@@ -1,7 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const Sky = () => {
+interface MoonProps {
+  date: Date,
+}
+
+const Sky = (props:MoonProps) => {
+  const time = props.date;
+
   const skyColorList = [
     'linear-gradient(#003, #003)',
     'linear-gradient(#223, #003)',
@@ -12,7 +18,6 @@ const Sky = () => {
     'linear-gradient(#EB9, #979)',
     'linear-gradient(#223, #003)',
   ];
-  const time = new Date();
   const colorIndex = Math.round(time.getHours() / 3) % 8;
   const sunColor = skyColorList[colorIndex];
   document.body.style.background = sunColor;
