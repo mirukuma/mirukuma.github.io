@@ -73,3 +73,61 @@ html {
   font-weight :200;
   margin-bottom: 1em;
 }
+
+
+.works {
+  width: 48vw;
+  height: 27vw;
+  transition: .6s;
+  margin-left: 1vw;
+  margin-bottom: 5vw;
+  position:relative;
+  overflow: hidden;
+  background-color:#303030;
+  box-shadow: 0vw 0vw 1vw #333;
+}
+
+.works h1 {
+  font-size: 5vw;
+  font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+  color: #101010;
+  font-weight :100;
+  top: 0;
+  left: 0;
+  margin-bottom: 0.3em;
+  position:absolute;
+  /*text-shadow: 0.2vw 0.2vw 1vw #222;*/
+}
+
+.works p{
+  font-size: 2vw;
+  font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+  color: #101010;
+  font-weight :200;
+  top: calc(5vw + 3em);
+  left: 0;
+  position:absolute;
+  text-align: left;
+  /*text-shadow: 0.2vw 0.2vw 1vw #222;*/
+}
+
+.works a {
+  display:block;
+  width: 101%; /* 横幅 */
+  height: 101%;
+  text-decoration: none;
+}
+
+.works img {
+  display:block;
+  width: 100%; /* 横幅 */
+  height: 100%;
+  background-color:#FFFFFF;
+  transition: .4s;
+  filter: contrast(20%) brightness(170%);
+  text-decoration: none;
+}
+
+.works:hover{
+  box-shadow: 1vw 1vw 5vw #333;
+}
