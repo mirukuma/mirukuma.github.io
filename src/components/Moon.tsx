@@ -27,7 +27,7 @@ const Moon = (props:MoonProps) => {
   const ellipseWidth = `${3.5 * Math.abs((phase % 0.5) - 0.25) * 4}vh`
 
   return (
-      <svg class="moon" style ={
+      <svg className="moon" style ={
       { 
         position: "fixed",
         left: `${x}%`,

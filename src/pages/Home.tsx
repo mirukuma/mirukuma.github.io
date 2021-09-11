@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import '../assets/css/main.css'
+import '../assets/css/main.scss'
 import PageTemplate from '../components/PageTemplate'
 import MainText from '../components/MainText'
 

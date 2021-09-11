@@ -26,7 +26,7 @@ const PageTemplate = (props:TitleProps) => (
       exit={{ opacity:0 }}
       transition={{ duration: 0.4}}
     >
-    <h1  class = 'title' style={{color: `${nowTextColor()}`}}> {props.contents} </h1>
+    <h1  className = 'title' style={{color: `${nowTextColor()}`}}> {props.contents} </h1>
     </motion.h1>
     <Ground />
   </>

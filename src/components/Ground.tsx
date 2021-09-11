@@ -7,7 +7,7 @@ const Ground = () => {
   const colorIndex = Math.round(time.getHours() / 3) % 8;
   const groundColor = groundColorList[colorIndex];
   return (
-    <div class="ground" style = {
+    <div className="ground" style = {
       {
         position: "fixed",
         right: "0",

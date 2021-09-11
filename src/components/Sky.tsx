@@ -27,7 +27,7 @@ const Sky = (props:MoonProps) => {
   const canvasRef = useRef(null);//contextのstate 空配列は
 
 
-  const [ctx, setCtx] = useState(null)
+  const [ctx, setCtx] = useState(null);
 
   useEffect(() => {
     setCtx(canvasRef.current.getContext('2d'))

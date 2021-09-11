@@ -10,7 +10,7 @@ interface MainTextProps {
 }
 
 const MainTextProps = (props: MainTextProps) => (
-  <div class='main' style={{color: `${nowTextColor()}`}}> 
+  <div className='main' style={{color: `${nowTextColor()}`}}> 
   <motion.div
     exit={{ opacity:0 }}
     transition={{ duration: 0.4}}

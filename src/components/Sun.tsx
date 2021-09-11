@@ -21,7 +21,7 @@ const Sun = (props:SunProps) => {
   const y = 80 - 75 * altitude / (Math.PI / 2);
 
   return (
-    <div class="sun" style ={
+    <div className="sun" style ={
       { 
         position: "fixed",
         borderRadius: "50%",

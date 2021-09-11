@@ -10,7 +10,6 @@ import Works from './pages/Works'
 import Donate from './pages/Donate'
 import Contact from './pages/Contact'
 
-
 ReactDOM.render(
   <Router>
     <Route render={({ location }) => (

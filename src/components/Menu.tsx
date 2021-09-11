@@ -21,7 +21,7 @@ const Menu = (props: Props) => {
     </li>
   );
   return (
-    <ul class="menu">{menuItems}</ul>
+    <ul className="menu">{menuItems}</ul>
   );
 }
 
