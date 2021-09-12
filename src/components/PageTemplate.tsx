@@ -14,9 +14,9 @@ interface TitleProps {
   contents: string,
 }
 
-const date = new Date();
-
-const PageTemplate = (props:TitleProps) => (
+const PageTemplate = (props:TitleProps) => {
+  const date = new Date();
+  return (
   <>
     <Sky  date = {date}/>
     <Sun  date = {date}/>
@@ -30,6 +30,7 @@ const PageTemplate = (props:TitleProps) => (
     </motion.h1>
     <Ground />
   </>
-);
+  )
+};
 
 export default PageTemplate;
