@@ -5,6 +5,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
 
+import {useRef, useState, useEffect} from 'react'
+
 import nowTextColor from '../assets/js/textColor'
 
 interface Props {
@@ -12,10 +14,18 @@ interface Props {
 }
 
 const Menu = (props: Props) => {
+  const [textColor, setTextColor] = useState(nowTextColor());
+
+  useEffect(()=>{
+    setInterval(() => {
+      setTextColor(nowTextColor());
+    }, 1000 * 30);
+  },[]);
+
   const menuNames = props.contents;
   const menuItems = menuNames.map((name) => 
     <li key={name}>
-        <Link to= {name} style={{color: nowTextColor()}}>
+        <Link to= {name} style={{color: textColor}}>
             {name.toUpperCase()}
         </Link>
     </li>
