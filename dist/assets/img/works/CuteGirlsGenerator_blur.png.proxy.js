@@ -1,0 +1,1 @@
+export default "/dist/assets/img/works/CuteGirlsGenerator_blur.png";
