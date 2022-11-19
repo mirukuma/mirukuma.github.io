@@ -1,7 +1,8 @@
 export default {
   mount: {
     src: '/dist/',
-    public: '/',
+    public: {url: '/', dot: true},
+
   },
   routes: [
     {

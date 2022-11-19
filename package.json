@@ -10,9 +10,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "mount":{
-    "public":{"dot":true}
-  },
   "devDependencies": {
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
