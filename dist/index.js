@@ -13,7 +13,9 @@ import Works from "./pages/Works.js";
 import Donate from "./pages/Donate.js";
 import Contact from "./pages/Contact.js";
 const date = new Date();
-ReactDOM.render(/* @__PURE__ */ React.createElement(Router, null, /* @__PURE__ */ React.createElement(Sky, {
+ReactDOM.render(/* @__PURE__ */ React.createElement(Router, {
+  basename: process.env.PUBLIC_URL
+}, /* @__PURE__ */ React.createElement(Sky, {
   date
 }), /* @__PURE__ */ React.createElement(Sun, {
   date
@@ -31,22 +33,22 @@ ReactDOM.render(/* @__PURE__ */ React.createElement(Router, null, /* @__PURE__ *
     initial: false
   }, /* @__PURE__ */ React.createElement(Route, {
     exact: true,
-    path: "/mirukuma.github.io/",
+    path: "/",
     component: Home
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/mirukuma.github.io/home",
+    path: "/home",
     component: Home
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/mirukuma.github.io/about",
+    path: "/about",
     component: About
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/mirukuma.github.io/works",
+    path: "/works",
     component: Works
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/mirukuma.github.io/donate",
+    path: "/donate",
     component: Donate
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/mirukuma.github.io/contact",
+    path: "/contact",
     component: Contact
   })))
 })), document.getElementById("app"));
