@@ -28,12 +28,12 @@ ReactDOM.render(
     <Route render={({ location }) => (
         <AnimatePresence exitBeforeEnter initial={false}>  
           <Switch location={location} key={location.pathname} initial={false}>
-            <Route exact path="/" component={Home}></Route>
-            <Route path="/home" component={Home}></Route>
-            <Route path="/about" component={About}></Route>
-            <Route path="/works" component={Works}></Route>
-            <Route path="/donate" component={Donate}></Route>
-            <Route path="/contact" component={Contact}></Route>
+            <Route exact path="/mirukuma.github.io/" component={Home}></Route>
+            <Route path="/mirukuma.github.io/home" component={Home}></Route>
+            <Route path="/mirukuma.github.io/about" component={About}></Route>
+            <Route path="/mirukuma.github.io/works" component={Works}></Route>
+            <Route path="/mirukuma.github.io/donate" component={Donate}></Route>
+            <Route path="/mirukuma.github.io/contact" component={Contact}></Route>
           </Switch>
         </AnimatePresence>
       )}
