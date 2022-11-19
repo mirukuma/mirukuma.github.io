@@ -19,7 +19,7 @@ import Contact from './pages/Contact'
 const date = new Date();
 
 ReactDOM.render(
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router>
     <Sky  date = {date}/>
     <Sun  date = {date}/>
     <Moon date = {date}/>

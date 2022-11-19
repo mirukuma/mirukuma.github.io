@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "introducing to snowpack",
   "license": "MIT",
+  "homepage": "https://mirukuma.github.io/mirukuma.github.io",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -40,6 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://mirukuma.github.io/mirukuma.github.io"
+  }
 }
