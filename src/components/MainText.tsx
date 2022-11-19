@@ -13,6 +13,7 @@ interface MainTextProps {
 
 const MainTextProps = (props: MainTextProps) => {
   const [textColor, setTextColor] = useState(nowTextColor());
+  const shadowColor = textColor == "#DDD" ? "#222" : "#DDD";
 
   useEffect(()=>{
     setInterval(() => {
@@ -21,7 +22,7 @@ const MainTextProps = (props: MainTextProps) => {
   },[]);
 
   return (
-    <div className='main' style={{color: `${textColor}`}}> 
+    <div className='main' style={{color: `${textColor}`, textShadow:`0.2vw 0.2vw 0.3vw ${shadowColor}`}}> 
     <motion.div
       exit={{ opacity:0 }}
       transition={{ duration: 0.4}}
