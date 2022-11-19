@@ -13,9 +13,7 @@ import Works from "./pages/Works.js";
 import Donate from "./pages/Donate.js";
 import Contact from "./pages/Contact.js";
 const date = new Date();
-ReactDOM.render(/* @__PURE__ */ React.createElement(Router, {
-  basename: process.env.PUBLIC_URL
-}, /* @__PURE__ */ React.createElement(Sky, {
+ReactDOM.render(/* @__PURE__ */ React.createElement(Router, null, /* @__PURE__ */ React.createElement(Sky, {
   date
 }), /* @__PURE__ */ React.createElement(Sun, {
   date
