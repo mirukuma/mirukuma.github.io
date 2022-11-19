@@ -1,0 +1,135 @@
+@import './node_modules/react-modal-video/scss/modal-video.scss';
+
+.menu{
+    z-index:1;
+    position: fixed;
+    list-style: none;
+    overflow: hidden;
+    top:0;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    display: flex;
+  justify-content: center;
+}
+
+.menu li {
+    height:2vw;
+    display: flex;
+    align-items: center;
+}
+
+.menu li a{
+    padding: 2vw 4vw;
+    text-decoration: none;
+
+    color:#222222;
+    font-family: 'Hiragino Sans','游ゴシック Light',sans-serif;
+    font-weight : 200;
+    font-size:1.5vw;
+    transition: .4s;
+}
+
+.menu li a:hover{
+  opacity:0.3;
+}
+
+html {
+  min-height: 100%;
+}
+
+@keyframes slideIn {
+  from {
+    transform:translate(0,-2em);
+    opacity:0;
+  }
+  50% {
+
+  }
+  to {
+    opacity:1;
+  }
+}
+
+.title {
+  color: #222;
+  font-size: 10vw;
+  font-family:'Hiragino Sans','游ゴシック Light',sans-serif;
+  animation-duration: 2s;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+  line-height: 0.3em;
+  margin-bottom: 1em;
+  font-weight :100;
+}
+
+.main {
+  width: 70%;
+  font-size: 2.5vw;
+  font-family:'Hiragino Sans','游ゴシック Light',sans-serif;
+  opacity:0;
+  color: #433;
+  animation-duration: 1s;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+  font-weight :200;
+  margin-bottom: 1em;
+}
+
+
+.works {
+  width: 48vw;
+  height: 27vw;
+  transition: .6s;
+  margin-left: 1vw;
+  margin-bottom: 5vw;
+  position:relative;
+  overflow: hidden;
+  background-color:#303030;
+  box-shadow: 0vw 0vw 1vw #333;
+}
+
+.works h1 {
+  font-size: 4vw;
+  font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+  color: #101010;
+  font-weight :100;
+  top: 0;
+  left: 0;
+  margin-bottom: 0.3em;
+  position:absolute;
+  text-shadow: none;
+}
+
+.works p{
+  font-size: 1.8vw;
+  font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+  color: #101010;
+  font-weight :200;
+  top: calc(2vw + 3em);
+  left: 0;
+  position:absolute;
+  text-align: left;
+  text-shadow: none;
+}
+
+.works a {
+  display:block;
+  width: 101%; /* 横幅 */
+  height: 101%;
+  text-decoration: none;
+}
+
+.works img {
+  display:block;
+  width: 100%; /* 横幅 */
+  height: 100%;
+  background-color:#FFFFFF;
+  transition: .4s;
+  filter: contrast(20%) brightness(170%);
+  text-decoration: none;
+}
+
+.works:hover{
+  box-shadow: 1vw 1vw 5vw #333;
+}
