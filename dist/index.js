@@ -31,22 +31,22 @@ ReactDOM.render(/* @__PURE__ */ React.createElement(Router, null, /* @__PURE__ *
     initial: false
   }, /* @__PURE__ */ React.createElement(Route, {
     exact: true,
-    path: "/",
+    path: "/mirukuma.github.io/",
     component: Home
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/home",
+    path: "/mirukuma.github.io/home",
     component: Home
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/about",
+    path: "/mirukuma.github.io/about",
     component: About
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/works",
+    path: "/mirukuma.github.io/works",
     component: Works
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/donate",
+    path: "/mirukuma.github.io/donate",
     component: Donate
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "/contact",
+    path: "/mirukuma.github.io/contact",
     component: Contact
   })))
 })), document.getElementById("app"));
